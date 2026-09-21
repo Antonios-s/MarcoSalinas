@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+:root { font-family: 'DM Mono', monospace; color: #171717; background: #f4f1ea; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; }
+body, body button, body a { cursor: crosshair !important; }
+input, textarea, select { cursor: text !important; }
+a { color: inherit; text-decoration: none; }
+button, input { font: inherit; }
+::selection { background: #d8f35d; color: #171717; }
+:focus-visible { outline: 2px solid #245b73; outline-offset: 4px; }
