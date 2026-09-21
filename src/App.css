@@ -571,9 +571,9 @@ h1 em, .site-footer h2 em { color: var(--coral); font-style: normal; }
   .nav-actions { gap: .3rem; }
   .nav-cv { display: none; }
   .theme-toggle { margin-left: .3rem; }
-  .hero { padding-top: 3.2rem; }
+  .hero { gap: 2.5rem; padding-top: 2.5rem; }
   .hero { min-height: auto; }
-  .hero h1 { font-size: clamp(3.5rem, 16vw, 5.5rem); margin: 1.8rem 0; }
+  .hero h1 { font-size: clamp(3rem, 14vw, 4.7rem); line-height: .88; margin: 1.5rem 0; }
   .hero-intro { font-size: .78rem; max-width: 20rem; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 1rem; }
   .intro-loader h2 { margin-bottom: 3rem; }
@@ -585,7 +585,7 @@ h1 em, .site-footer h2 em { color: var(--coral); font-style: normal; }
   .recruiter-mode-layout { grid-template-columns: 1fr; }
   .recruiter-mode-facts { margin-top: 2rem; }
   .recruiter-mode-actions { align-items: flex-start; flex-direction: column; }
-  .hero-art { margin: 1rem .35rem 1rem 0; max-height: none; }
+  .hero-art { margin: .5rem .35rem 1rem 0; max-height: 32rem; }
   .section-heading { align-items: flex-start; flex-direction: column; gap: 1.4rem; margin-bottom: 2.3rem; }
   .section-note { text-align: left; }
   .projects { display: block; }
@@ -695,7 +695,7 @@ h1 em, .site-footer h2 em { color: var(--coral); font-style: normal; }
   .mobile-menu { padding-left: 1rem; padding-right: 1rem; }
   .mobile-menu a { font-size: 1.35rem; }
   .hero, main > section { padding-left: 1rem; padding-right: 1rem; }
-  .hero h1 { font-size: clamp(2.8rem, 15vw, 4.2rem); }
+  .hero h1 { font-size: clamp(2.7rem, 14vw, 4rem); }
   .hero-intro { max-width: none; }
   .hero-art { box-shadow: .65rem .65rem 0 var(--coral); width: calc(100% - .65rem); }
   .hero-art:hover { box-shadow: .3rem .3rem 0 var(--acid); }
@@ -730,6 +730,14 @@ h1 em, .site-footer h2 em { color: var(--coral); font-style: normal; }
   .contact-form-footer > span { line-height: 1.4; }
   .email-link { align-items: flex-start; gap: .7rem; }
   .whatsapp-float { bottom: .65rem; right: .65rem; }
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .hero { gap: 3rem; padding-bottom: 5rem; padding-top: 4rem; }
+  .hero h1 { font-size: clamp(4rem, 9vw, 6.5rem); max-width: 10ch; }
+  .hero h1 em { white-space: nowrap; }
+  .hero-intro { max-width: 35rem; }
+  .hero-art { max-height: 34rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
